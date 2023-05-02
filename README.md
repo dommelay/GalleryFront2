@@ -1,6 +1,6 @@
 # Gallery
 
-Gallery is a website application that allows users to search through the Art Institue of Chicago's databse and collect their favorite artworks. Includes random artwork generator. Technologies used: TypeScript, MERN (MongoDB, Express, React + Router, Node), RESTful API, third party API. App is capable of CRD functionality.
+Gallery is a website application that allows users to search through the Art Institute of Chicago's database and collect their favorite artworks. Includes random artwork generator. Technologies used: TypeScript, MERN (MongoDB, Express, React + Router, Node), RESTful API, third party API. App is capable of CRD functionality.
 
 ## Fun Feature
 Checkout the random search generator on the Search Artworks page!
