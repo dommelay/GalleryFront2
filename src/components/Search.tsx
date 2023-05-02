@@ -130,15 +130,15 @@ useEffect(() => {
                 ( search === false ?
                     <>
                     <div>
-                        <h2>Don't know what to search? Generate an artwork randomly!</h2>
-                        <h1>This is an artwork we found by searching '{generatedWord}'</h1>
+                        <h2 className='randomdisplay'>Don't know what to search? Generate an artwork randomly!</h2>
+                        <h1 className='randomdisplay'>This is an artwork we found by searching '{generatedWord}'</h1>
                         { randomArtwork ?
                         <div>
                             <div className='searchadddiv'>
                             <Link to={`/artworks/${randomArtwork.id}`}><h4 className='addsearch'>Add Artwork</h4></Link>
                             <h4 className='randomsearch'onClick={handleRandomSearch}>Random Search</h4>
                             </div>
-                        <img src={randomArtwork.imageSrc}/>
+                        <img className='randomartworkimg'src={randomArtwork.imageSrc}/>
                         </div>
                            :
                            <></> }

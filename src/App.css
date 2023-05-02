@@ -165,8 +165,8 @@ button {
     text-decoration: underline;
     cursor: default;
 }
-#searchtitle, form {
-    padding-left: 15px;;
+#searchtitle, form, .searchadddiv, .randomartworkimg, .randomdisplay {
+    padding-left: 35px;
 }
 
 .CRdiv {
@@ -179,6 +179,7 @@ button {
 .CRartist {
     margin-bottom: 45px;
 }
+
 @media  (max-width: 500px) {
     .navlink {
         font-size: 16px;
