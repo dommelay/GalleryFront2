@@ -11,7 +11,7 @@ const Gallery = () => {
         <>
         <div className='nav'>
             <div id='topnav'>
-                <Link style={{ textDecoration: 'none' }} to = {'/gallery'}>
+                <Link style={{ textDecoration: 'none' }} to = {'/'}>
                         <h4 className='navlink'>Home</h4>
                 </Link>
             </div>

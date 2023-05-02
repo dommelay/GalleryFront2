@@ -17,7 +17,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         
-        <Route path='/gallery' element={<Gallery/>}/>
+        <Route path='/' element={<Gallery/>}/>
         <Route path='/artworks/:id' element={<ArtworkCR/>}/>
         <Route path='/artworks/search' element={<Search/>}/>
         <Route path='/my-artworks' element={<Artworks/>}/>
