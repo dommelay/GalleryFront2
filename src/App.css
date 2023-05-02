@@ -165,19 +165,31 @@ button {
     text-decoration: underline;
     cursor: default;
 }
-#searchtitle, form, .searchadddiv, .randomartworkimg, .randomdisplay {
+ .searchadddiv, .randomdisplay {
     padding-left: 35px;
 }
-
-.CRdiv {
-    padding-left: 15px;
+#searchtitle, form {
+    padding-left: 50px;
 }
+.randomartworkimg, .CRimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 .CRtitle {
     font-size: 35px;
     margin-bottom: 5px;
 }
 .CRartist {
     margin-bottom: 45px;
+}
+.CRtitle, .CRartist, .handleadd, .CRnoimg, .CRadded  {
+    margin-left: 50px;
+}
+.handleadd, .CRadded {
+    margin-top: 35px;
 }
 
 @media  (max-width: 500px) {

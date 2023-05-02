@@ -87,12 +87,14 @@ const ArtworkCR = () => {
               <h2 className='CRtitle'key={artwork.marker}>{artwork.title}</h2>
               <h2 className='CRartist'>{artwork.artist_title}</h2>
               {artwork.image_id != null ?
-              <img src={artwork.imageSrc}/>
-              : <h2>Sorry, there is no available image for this search</h2>
+              <div className='CRimg'>
+                <img src={artwork.imageSrc}/>
+              </div>
+              : <h2 className='CRnoimg'>Sorry, there is no available image for this search</h2>
               }
               {added
               ? 
-              <><h2>{artwork.title} added to your collection!</h2></>
+              <><h2 className='CRadded'>{artwork.title} added to your collection!</h2></>
               :
               <h4 className='handleadd'onClick={handleAdd}>Add Artwork</h4>
               }

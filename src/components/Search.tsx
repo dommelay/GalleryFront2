@@ -138,7 +138,9 @@ useEffect(() => {
                             <Link to={`/artworks/${randomArtwork.id}`}><h4 className='addsearch'>Add Artwork</h4></Link>
                             <h4 className='randomsearch'onClick={handleRandomSearch}>Random Search</h4>
                             </div>
-                        <img className='randomartworkimg'src={randomArtwork.imageSrc}/>
+                            <div className='randomartworkimg'> 
+                                <img src={randomArtwork.imageSrc}/>
+                            </div>
                         </div>
                            :
                            <></> }
