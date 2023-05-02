@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+a {
+    text-decoration: none;
+}
+.myartworkscontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#galleryimgdiv {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://www.artic.edu/iiif/2/c617e2f0-d5fe-0772-390e-6d8c83895815/full/843,/0/default.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#artlogo {
+    width: 55px;
+    height: auto;
+}
+#artlogodiv {
+    margin-left: auto;
+    padding: 3px 0px 0px 0px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px 15px 10px;
+    align-items: center;
+}
+#middlenav {
+    margin: 0px 20px 0px 20px;
+}
+.navlink {
+    font-size: 18px;
+    color: black;
+}
+body {
+    background-color: #e6e6e6;
+    font-family: 'Questrial', sans-serif;
+}
+button {
+    font-family: 'Questrial', sans-serif;
+}
+#galleryimgdiv {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#infologo {
+    width: 100px;
+    height: auto;
+    border-radius: 6px;
+}
+#galleryinfocontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#gallery {
+    font-size: 70px;
+    margin: 40px 0px 40px 0px;
+}
+#myartworks {
+    font-size: 60px;
+    margin: 0px 0px 20px 0px;
+}
+#myartworksdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.myartwork {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-bottom: 3px solid black;
+}
+.myartworkimg {
+    align-self: center;
+    padding-top: 30px;
+}
+.myartworkinfo {
+    padding: 20px 0px 35px 40px;
+}
+.artist, .date, .origin, .type {
+    font-size: 30px;
+}
+.myartworkdetailcontainer {
+    display: flex;
+    flex-direction: row;
+}
+.myartworktitle {
+    font-size: 40px;
+}
+.deletex {
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+.deletediv {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 40px;
+}
+.origintypediv {
+    border-left: 3px solid black;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+.artist, .origin {
+    margin-top: 25px;
+}
+.date, .type {
+    margin-bottom: 25px;
+}
+
+.searchedArt {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid black;
+    height: 140px;
+}
+.searchid {
+    font-size: 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: 	#33007b;
+    margin: 20px 0px 0px 15px;
+    width: 125px;
+}
+.searchtitle {
+    margin: 20px 0px 0px 0px;
+}
+.searchedArt .searchid:hover {
+    text-decoration: underline;
+  }
+.searchiddiv {
+    margin: 15px 0px 15px 15px;
+}
+.searchthumbnail {
+    font-size: 16px;
+}
+.searchcontainer {
+    padding: 25px 15px 15px 15px;
+}
+.searchadddiv {
+    display: flex;
+    flex-direction: row;
+}
+.addsearch {
+    margin-top: 0px;
+}
+.randomsearch {
+    margin: 0px 0px 0px 25px;
+}
+.randomsearch, .addsearch, .handleadd {
+    color: #33007b;
+    font-size: 23px;
+}
+.addsearch:hover, .randomsearch:hover, .handleadd:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+#searchtitle, form {
+    padding-left: 15px;;
+}
+
+.CRdiv {
+    padding-left: 15px;
+}
+.CRtitle {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.CRartist {
+    margin-bottom: 45px;
+}
+@media  (max-width: 500px) {
+    .navlink {
+        font-size: 16px;
+    }
+    #middlenav {
+        margin: 0px 10px 0px 10px;
+    }
+    #gallery {
+        margin-bottom: 30px;
+    }
+    #infologo {
+        width: 75px;
+    }
+    #gallery {
+        font-size: 60px;
+        margin-top: 35px;
+    }
+}
+
