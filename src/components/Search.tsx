@@ -26,12 +26,17 @@ const randomSearchGeneration = () => {
         const id = (response.data.data[0].id).toString()
         console.log(id)
         axios.get(`https://api.artic.edu/api/v1/artworks/${id}`).then((response) => {
-        const random = {
-            imageSrc: `${response.data.config.iiif_url}/${response.data.data.image_id}/full/843,/0/default.jpg`,
-            title: response.data.data.title,
-            id: response.data.data.id,
-        }
-        setRandomArtwork(random)
+            if (response.data.data.image_id != null) {
+                const random = {
+                    imageSrc: `${response.data.config.iiif_url}/${response.data.data.image_id}/full/843,/0/default.jpg`,
+                    title: response.data.data.title,
+                    id: response.data.data.id,
+                }
+                setRandomArtwork(random)
+            }
+            else {
+                randomSearchGeneration()
+            }
     })
         } else {
             randomSearchGeneration()
