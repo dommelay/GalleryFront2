@@ -25,7 +25,7 @@ const MyArtwork = () => {
    const [fullsize, setFullsize] = useState(true)
    
    const handleArtworks = () => {
-    axios.get('https://domsgallery.herokuapp.com/my-artworks').then((response) => {
+    axios.get('https://doms-gallery-a884ae8fd9d0.herokuapp.com/my-artworks').then((response) => {
         setArtworks(response.data)
     })
    
@@ -66,7 +66,7 @@ return (
     {artworks.map((artwork) => {
         const handleDelete = (event: React.MouseEvent <HTMLDivElement, MouseEvent>) => {
             event.preventDefault()
-            axios.delete(`https://domsgallery.herokuapp.com/my-artworks/${artwork._id}`).then((response) => {
+            axios.delete(`https://doms-gallery-a884ae8fd9d0.herokuapp.com/my-artworks/${artwork._id}`).then((response) => {
                 handleArtworks()
             })
         } 
